@@ -144,7 +144,30 @@ function updateSchedule() {
         }
 
         if (event.limitedSales) {
-            eventHTML += `<div class="limited-sales">Limited Ship Sales: ${event.limitedSales}</div>`;
+            let limitedSalesLinks = '';
+            const sales = event.limitedSales.split(', ');
+            sales.forEach(sale => {
+                let link = '';
+                switch (sale) {
+                    case 'RSI Constellation Phoenix':
+                        link = 'https://robertsspaceindustries.com/store/pledge/browse/extras/?search=phoenix&sort=weight&direction=desc';
+                        break;
+                    case 'Aegis Idris-P':
+                        link = 'https://robertsspaceindustries.com/store/pledge/browse/extras/?search=idris&sort=weight&direction=desc';
+                        break;
+                    case 'Aegis Javelin':
+                        link = 'https://robertsspaceindustries.com/store/pledge/browse/extras/?search=javelin&sort=weight&direction=desc';
+                        break;
+                    case 'Drake Kraken':
+                    case 'Drake Kraken Privateer':
+                        link = 'https://robertsspaceindustries.com/store/pledge/browse/extras/?search=kraken&sort=weight&direction=desc';
+                        break;
+                }
+                limitedSalesLinks += `<a href="${link}" class="limited-sales-link" target="_blank">${sale}</a>, `;
+            });
+            limitedSalesLinks = limitedSalesLinks.slice(0, -2); // Remove the trailing comma and space
+
+            eventHTML += `<div class="limited-sales">Limited Ship Sales: ${limitedSalesLinks}</div>`;
             let lastWaveStatus = '';
             event.waveTimestamps.forEach((waveTimestamp, waveIndex) => {
                 const nextWaveTimestamp = (waveIndex < event.waveTimestamps.length - 1) ?
