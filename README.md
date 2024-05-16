@@ -16,7 +16,7 @@ Accessing the event schedule is straightforward and requires no installation.
 
 ## Usage
 
-- **Viewing the Schedule:** Open `index.html` to see the live schedule of events, or visit the schedule directly through the GitHub Pages feature at https://f4sh.github.io/ILW2954/ for immediate access.
+- **Viewing the Schedule:** Open `index.html` to see the live schedule of events, or visit the schedule directly through the GitHub Pages feature at https://f4sh.github.io/ILW/ for immediate access.
 - **Copying Schedule for Discord:** Click the 'Copy to Discord' button for an easy shareable format.
 
 ## Disclaimer
