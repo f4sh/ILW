@@ -108,7 +108,7 @@ h2 {
 
 footer {
     background-color: #152851;
-    opacity: 0.96;
+    opacity: 0.9;
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -179,7 +179,7 @@ footer {
     background: #152851;
     color: #fafafa;
     border-radius: 8px;
-    padding: 0 20px 0 20px;
+    padding: 10px 20px;
     font-family: 'Exo', sans-serif;
     font-size: 1em;
     width: 10%;
@@ -190,6 +190,37 @@ footer {
 
 #timezone-selector:hover,
 #timezone-selector:focus {
+    border-color: #152851;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#timezone-container {
+    display: none;
+    padding: 10px;
+    background-color: #152851;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
+#toggle-timezone-btn {
+    background: #152851;
+    color: #fafafa;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Exo', sans-serif;
+    font-size: 1em;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggle-timezone-btn:hover,
+#toggle-timezone-btn:active,
+#toggle-timezone-btn:focus {
     border-color: #152851;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
