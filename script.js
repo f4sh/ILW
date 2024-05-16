@@ -1,12 +1,12 @@
 const schedule = [
     {
         name: "RSI, ORIGIN, CONSOLIDATED OUTLAND, ARGO",
-        timestamp: 1715961600,
-        end: 1716134400,
+        timestamp: 1715875200,
+        end: 1716048000,
         location: "Bevic Convention Center, Area 18",
         participants: "ROBERTS SPACE INDUSTRIES, ORIGIN JUMPWORKS, CONSOLIDATED OUTLAND, ARGO ASTRONAUTICS",
         limitedSales: "RSI Constellation Phoenix",
-        waveTimestamps: [1715961600, 1715990400, 1716015600]
+        waveTimestamps: [1715875200, 1715904000, 1715929200]
     },
     {
         name: "CRUSADER, MIRAI, MISC, TUMBRIL",
@@ -128,7 +128,8 @@ function updateSchedule() {
                 timeLeftText = 'Finished';
             }
 
-            eventHTML += `<div class="event-name happening-now">${event.name} - Happening Now in ${event.location}<span class="time-left">${timeLeftText}</span></div>`;
+            eventHTML += `<div class="event-name happening-now">${event.name}<br><span class="location-small">Happening Now in ${event.location}</span><span class="time-left">${timeLeftText}</span></div>`;
+
         } else if (eventTimeLeft.hasPassed) {
             eventHTML += `<div class="event-name finished">${event.name} - Finished</div>`;
         } else {
@@ -196,4 +197,3 @@ function copyToDiscord() {
         console.error('Failed to copy text: ', err);
     });
 }
-
