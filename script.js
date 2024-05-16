@@ -1,12 +1,12 @@
 const schedule = [
     {
         name: "RSI, ORIGIN, CONSOLIDATED OUTLAND, ARGO",
-        timestamp: 1715875200,
-        end: 1716048000,
+        timestamp: 1715961600,
+        end: 1716134400,
         location: "Bevic Convention Center, Area 18",
         participants: "ROBERTS SPACE INDUSTRIES, ORIGIN JUMPWORKS, CONSOLIDATED OUTLAND, ARGO ASTRONAUTICS",
         limitedSales: "RSI Constellation Phoenix",
-        waveTimestamps: [1715875200, 1715904000, 1715929200]
+        waveTimestamps: [1715961600, 1715990400, 1716015600]
     },
     {
         name: "CRUSADER, MIRAI, MISC, TUMBRIL",
