@@ -135,6 +135,15 @@ footer {
     margin: 2em 0 0 0;
 }
 
+.limited-sales-link {
+    color: #c6ab6c;
+    text-decoration: none;
+}
+
+.limited-sales-link:hover {
+    text-decoration: underline;
+}
+
 .finished-event .limited-sales {
     display: none;
 }
