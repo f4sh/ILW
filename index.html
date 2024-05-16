@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invictus Launch Week 2954 Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section aria-labelledby="schedule-heading">
+            <h2 id="schedule-heading">Invictus Launch Week 2954 Schedule</h2>
+            <article id="schedule"></article>
+        </section>
+        <div class="button-container">
+            <button id="copyToDiscordBtn" onclick="copyToDiscord()">Click to copy schedule in Discord format</button>
+        </div>
+        <footer>
+            <p id="timezone-info"></p>
+            <label for="timezone-selector">Select Timezone Manually:</label>
+            <select id="timezone-selector" onchange="updateSchedule()"></select>
+            <p class="disclaimer">This web app is not officially affiliated with Cloud Imperium Games or the Star
+                Citizen project.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

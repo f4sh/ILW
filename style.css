@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+
+body,
+html {
+    background-color: #101e3c;
+    color: #fafafa;
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.container {
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.disclaimer {
+    font-size: 0.7em;
+    font-weight: 400;
+    margin: 2.5em 0 2em 0;
+}
+
+#copyToDiscordBtn {
+    display: block;
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#copyToDiscordBtn:hover {
+    background-color: #4752C4;
+}
+
+#copyToDiscordBtn:active {
+    background-color: #363E9A;
+}
+
+#copyToDiscordBtn:focus {
+    outline: none;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#timezone-info {
+    color: #fafafa;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.event {
+    border: 2px solid #152851;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.event-active {
+    background: linear-gradient(to right, #152851, #152851, #152851);
+    border: none !important;
+    margin-bottom: 10px;
+    padding: 55px;
+    transition: transform 0.3s ease;
+}
+
+.event:hover,
+.event-active:hover {
+    transform: scale(1.02);
+}
+
+.event-name {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.finished-wave {
+    color: #ff2600;
+}
+
+.finished-event {
+    color: #1e376f;
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: #152851;
+    opacity: 0.96;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.happening-now {
+    color: #c6ab6c;
+    font-size: 2.7em;
+    font-weight: 700;
+}
+
+.wave-happening-now {
+    color: #c6ab6c;
+    font-weight: 700;
+}
+
+.limited-sales {
+    color: #c6ab6c;
+    font-weight: 700;
+    margin: 2em 0 0 0;
+}
+
+.finished-event .limited-sales {
+    display: none;
+}
+
+.finished-event .wave {
+    display: none;
+}
+
+.location {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.location,
+.limited-sales,
+.wave {
+    margin-bottom: 5px;
+}
+
+#schedule {
+    padding: 2em 0;
+}
+
+.wave-pending {
+    color: #152851;
+    font-weight: 700;
+}
+
+.time-left {
+    display: block;
+    font-size: 0.7em;
+}
+
+#timezone-selector {
+    background: #152851;
+    color: #fafafa;
+    border-radius: 8px;
+    padding: 0 20px 0 20px;
+    font-family: 'Exo', sans-serif;
+    font-size: 1em;
+    width: 10%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#timezone-selector:hover,
+#timezone-selector:focus {
+    border-color: #21004d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label[for="timezone-selector"] {
+    color: #fafafa;
+    font-size: 1em;
+    font-weight: 700;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    .event-name {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    #timezone-selector {
+        width: 30%;
+    }
+
+}
