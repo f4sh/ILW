@@ -1,0 +1,93 @@
+{
+"display_override": ["window-controls-overlay"],
+"name": "ILW Schedule",
+"short_name": "ILW Schedule",
+"start_url": "/ILW/index.html",
+"scope": "/ILW/",
+"display": "standalone",
+"description": "See the ILW Schedule in your local timezone",
+"lang": "English",
+"dir": "auto",
+"theme_color": "#101e3c",
+"background_color": "#101e3c",
+"orientation": "any",
+"icons": [
+    {
+        "src": "img/16.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "img/32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "img/64.png",
+        "sizes": "64x64",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "img/128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "img/256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "any"
+    },
+    {
+        "src": "img/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    }
+],
+
+"shortcuts": [
+    {
+        "name":"Copy to Discord",
+        "short_name":"Copy",
+        "description":"Copy the ILW Schedule to Discord",
+        "url":"./?action=copyToDiscord",
+        "icons":[
+            {
+                "src":"img/16.png",
+                "sizes":"16x16",
+                "type":"image/png"
+            },
+            {
+                "src":"img/32.png",
+                "sizes":"32x32",
+                "type":"image/png"
+            },
+            {
+                "src":"img/64.png",
+                "sizes":"64x64",
+                "type":"image/png"
+            },
+            {
+                "src":"img/128.png",
+                "sizes":"128x128",
+                "type":"image/png"
+            },
+            {
+                "src":"img/256.png",
+                "sizes":"256x256",
+                "type":"image/png"
+            },
+            {
+                "src":"img/512.png",
+                "sizes":"512x512",
+                "type":"image/png"
+            }
+        ]
+    }
+]
+}

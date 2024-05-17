@@ -32,7 +32,7 @@ html {
 
 #copyToDiscordBtn {
     display: block;
-    background-color: #5865F2;
+    background-color: #7289DA; // Discord "blurple"
     color: white;
     border: none;
     padding: 10px 15px;

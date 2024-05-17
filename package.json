@@ -1,0 +1,28 @@
+{
+  "name": "f4sh-ilw",
+  "version": "1.0.0",
+  "description": "Experience the grandeur of the United Empire of Earth Navy's (UEEN) biggest military expo and free-fly event. This interactive web app showcases a comprehensive schedule, countdown timers, and a Discord-compatible schedule ready to copy for the Star Citizen Invictus Launch Week. Stay updated with key event timelines and details effortlessly.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f4sh/ILW.git"
+  },
+  "keywords": [
+    "star",
+    "citizen"
+  ],
+  "author": "f4sh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f4sh/ILW/issues"
+  },
+  "homepage": "https://github.com/f4sh/ILW#readme",
+  "dependencies": {
+    "workbox-precaching": "^7.1.0"
+  }
+}
