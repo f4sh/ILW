@@ -225,4 +225,8 @@ label[for="timezone-selector"] {
         width: 30%;
     }
 
+    .location {
+        font-size: 0.9em;
+    }
+
 }
