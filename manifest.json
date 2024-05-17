@@ -55,7 +55,7 @@
         "name":"Copy to Discord",
         "short_name":"Copy",
         "description":"Copy the ILW Schedule to Discord",
-        "url":"/?action=copyToDiscord",
+        "url":"./?action=copyToDiscord",
         "icons":[
             {
                 "src":"img/16.png",
