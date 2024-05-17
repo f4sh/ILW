@@ -200,9 +200,14 @@ function updateSchedule() {
 }
 
 window.onload = () => {
-    populateTimeZones();
-    updateSchedule();
-    setInterval(updateSchedule, 1000);
+  populateTimeZones();
+  updateSchedule();
+  setInterval(updateSchedule, 1000);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('action') === 'copyToDiscord') {
+    copyToDiscord();
+  }
 };
 
 function copyToDiscord() {
