@@ -42,7 +42,7 @@ const schedule = [
     {
         name: "INVICTUS FINALE",
         timestamp: 1716825600,
-        end: 1717084800,
+        end: 1717023600,
         location: "Bevic Convention Center, Area 18"
     }
 ];
