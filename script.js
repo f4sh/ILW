@@ -37,7 +37,7 @@ const schedule = [
         end: 1716825600,
         location: "Riker Memorial Spaceport, Area 18",
         limitedSales: "Drake Kraken, Drake Kraken Privateer",
-        waveTimestamps: [1716652800, 1716681600, 1716706800]
+        waveTimestamps: [1716652800, 1716681600, 1716710400]
     },
     {
         name: "INVICTUS FINALE",
